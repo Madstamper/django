@@ -126,3 +126,4 @@ class FileFieldTests(TestCase):
             self.assertEqual(document.myfile.storage, loaded_myfile.storage)
             self.assertEqual(document.myfile.instance, loaded_myfile.instance)
             self.assertEqual(document.myfile.field, loaded_myfile.field)
+        document.myfile.delete()
